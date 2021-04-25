@@ -624,6 +624,8 @@ class PuppetGAN:
             n_batches_real = len(data_real) if len(data_real) % batch_size == 0 else len(data_real) - 1
 
             data_real = list(islice(data_real, n_batches_real))
+
+            # print(data_real)
             data_synth = list(islice(data_synth, n_batches_real))
 
             for i, (a, b) in enumerate(zip(data_real, data_synth)):

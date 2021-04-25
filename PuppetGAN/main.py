@@ -46,7 +46,8 @@ def main(test, ckpt):
         'mnist' : 'digits',
         'usps' : 'digits',
         'mouth' : 'faces',
-        'light' : 'faces'
+        'light' : 'faces',
+        "bodies" : "bodies",
     }
 
 
@@ -127,4 +128,6 @@ def main(test, ckpt):
 
 
 if __name__ == '__main__':
+    import os
+    os.environ['TF_XLA_FLAGS'] = '--tf_xla_enable_xla_devices'
     main()
