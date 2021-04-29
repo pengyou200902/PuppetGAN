@@ -24,7 +24,7 @@ since it's too large for Github.
 - Choose a resolution among ```128x128```, ```64x64```, ```32x32```.
 
 - Rename the folders which denotes the resolution you choose. For example you want to use ```128x128```:
-    - First rename ```real_128``` to ```real_```.
+    - Delete the numbers, that is to rename ```real_128``` to ```real_```.
     - Do the same for ```rows_128``` and ```synth_128```.
     
 - Change the setting of **image size** for key ```bodies``` in ```./PuppetGAN/config.json```.
