@@ -7,12 +7,29 @@
 - You Peng
 - Junyi Zhu
 
+# Report
+- [Report is here.](./585_FinalReport.pdf)
+
 # Dataset
 
 - It's in [Google Drive](https://drive.google.com/drive/folders/1AS5Vmr8Ggk-yYsCEIc1_it67jJ8z1fqK?usp=sharing) 
 since it's too large for Github.
 
 - Unzip to ```./data```
+
+# Instrcutions
+
+- Open the dataset link and go into ```data/bodies/```.
+
+- Choose a resolution among ```128x128```, ```64x64```, ```32x32```.
+
+- Rename the folders which denotes the resolution you choose. For example you want to use ```128x128```:
+    - First rename ```real_128``` to ```real_```.
+    - Do the same for ```rows_128``` and ```synth_128```.
+    
+- Change the setting of **image size** for key ```bodies``` in ```./PuppetGAN/config.json```.
+
+- Run main.py. 
 
 # Result Files
 
@@ -23,8 +40,6 @@ since they are too large for Github.
   
 - Unzip ```results``` to ```./PuppetGAN/results```
 
-# Report
-- [Report is here.](./585_FinalReport.pdf)
 
 # Credit
 - BU CS 585 Professors and TAs
